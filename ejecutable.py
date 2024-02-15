@@ -1,4 +1,5 @@
-import Intento as it
+#Ejecutable
+import logica as it
 
 def main1 (file_name:str)->bool:
 
