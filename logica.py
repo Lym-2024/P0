@@ -236,7 +236,7 @@ def generar_tokens(cadena:str)->list:
 
 def verificar(cadena:str,pos:int,txt:str)->tuple:
 
-    constantes = ['dim','myxpos','myypos','mychips','myballoons','balloonshere','chipshere','spaces',':left',':right',':around',':north',':south',':east',':west',':front',':back',':chips',':balloons',':up',':down']
+    constantes = ['dim','myxpos','myypos','mychips','myballoons','balloonshere','chipshere','spaces',':left',':right',':around',':north',':south',':east',':west',':front',':back',':chips',':balloons']
 
     prueba = ''
 
