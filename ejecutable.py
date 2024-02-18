@@ -1,4 +1,4 @@
-#Ejecutable
+#Ejecutable (este es el archivo que se debe ejecutar)
 import logica as it
 
 def main1 (file_name:str)->bool:
@@ -17,7 +17,15 @@ def main1 (file_name:str)->bool:
 
     tokens = it.generar_tokens(cadena)
 
-    return tokens
+    return it.verificar_tokens(tokens)
 
-i = main1('ensayo.txt')
-print('terminamos')
+def main():
+    print('Bienvenido.\n')
+    file = input("Por favor, ingrese el nombre del archivo que contiene el programa (debe estar en la misma carpeta de este programa): ")
+    r = main1(file)
+    if r:
+        print('Yes - la sintáxis del programa es correcta.')
+    else:
+        print('No - la sintáxis del programa no es correcta.')
+
+main()
